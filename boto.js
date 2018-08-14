@@ -75,7 +75,7 @@ switch (action) {
 	song();
 	break;
 
-	case "randomz-this":
+	case "do-what-it-says":
 	randomz();
 	break;
 
@@ -229,24 +229,31 @@ function song (){
 function randomz() {};
 
 // * `do-what-it-says`
-	// Use fs node package and liri  will tkae the text from inside random.txt and then use it to call on of LIRI's commands
+	// Use fs node package and liri  will take the text from inside random.txt and then use it to call on of LIRI's commands
 	// It should run "spotify-this-song" for "I Want it That Way"
+	fs.readFile("random.txt", "utf8", function(error, data){
+		if (error){
+			return console.log("cannot read random.text");
+		}
+
+		console.log(data);
+	})
 
 
 
 // ------- Joke -------- // 
 
-function joke() {
-	//returns a number between 1 and 4 
-	Math.floor(Math.random()*5); 
-	fs.readFile("joke.txt", "utf8", function (err, data){
-		if (err) {
-			return console.log("I cannot read the file. I wish I could have joke")
-		}
-	})
+// function joke() {
+// 	//returns a number between 1 and 4 
+// 	Math.floor(Math.random()*5); 
+// 	fs.readFile("joke.txt", "utf8", function (err, data){
+// 		if (err) {
+// 			return console.log("I cannot read the file. I wish I could have joke")
+// 		}
+// 	})
 
 
-};
+// };
 
 
 //Func to write history into a text document 
