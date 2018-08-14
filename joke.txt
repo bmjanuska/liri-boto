@@ -1,0 +1,10 @@
+joke=[
+{jk:"How do you comfort a JavaScript bug?",ans:"You console it! Hahahaha!"},
+
+{jk:"Why was the JavaScript developer sad?",ans:" Because he didn’t Node how to Express himself. Giggle"},
+
+{jk:"Why did the developer go broke?", ans:"Because he used up all his cache. Heehee! "},
+
+{jk:"Why did the C# developer fall asleep?", ans:"Because he didn’t like Java. Lol"},
+
+] 
